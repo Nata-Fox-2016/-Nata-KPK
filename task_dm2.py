@@ -1,14 +1,18 @@
 from drawman import *
 from time import sleep
 
+
 def f(x)
     return x*x
 
-
+print (drawman_scale)
+drawman_scale = 20
+x = -5.0
+to_point(x, f(x))
 pen_down()
-for x,y in range(0,11):
+while x <= 5:
     to_point(x, f(x))
-to_point (A[0][0], A[0][1])
+    x += 0.1
 pen_up()
 
 sleep(10)
