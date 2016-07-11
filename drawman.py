@@ -48,4 +48,4 @@ test_drawman()
  if _name_=='_main_':
      import time
     test_drawman()
-    time.sleep(10)
+    time.sleep(21)
