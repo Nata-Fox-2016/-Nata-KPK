@@ -11,4 +11,4 @@ for x,y in range(0,11):
 to_point (A[0][0], A[0][1])
 pen_up()
 
-sleep(21)
+sleep(20)
