@@ -8,7 +8,7 @@ def init_drawman():
     x_current=0
     y_current=0
     t.goto(x_current, y_current)
-    _drawman_scale (default_scale)
+    drawman_scale(default_scale)
 
 
 def drawman_scale(scale):
@@ -17,8 +17,8 @@ def drawman_scale(scale):
 
 def test_drawman():
     """
-    Тестирование работы Чертежника
-    :return:None
+    ???????????? ?????? ??????????
+    :return: None
     """
     pen_dowm()
     for i in range(5):
@@ -47,8 +47,7 @@ def to_point(x, y):
 
 
 init_drawman()
-test_drawman()
- if _name_=='_main_':
-     import time
-     test_drawman()
-     time.sleep(10)
+if _name_ == '_main_':
+    import time
+    test_drawman()
+    time.sleep(10)
