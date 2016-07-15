@@ -8,10 +8,10 @@ def f(x):
 
 print (drawman_scale)
 drawman_scale (10)
-x = -5.0
+x = -4.5
 to_point(x, f(x))
 pen_down()
-while x <= 5:
+while x <= 4.5:
     to_point(x, f(x))
     x += 0.1
 pen_up()
