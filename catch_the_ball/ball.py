@@ -4,7 +4,7 @@ import tkinter
 def button1_command():
     print('Button 1 default command')
 
-    
+
 def print_hello(event):
     print(event.num)
     print(event.x, event.y)
@@ -18,7 +18,7 @@ def print_hello(event):
     else:
         raise ValueError()
 
-    
+
 def init_main_window():
     """
     Inisializasiya glavnogo okna: sozdanie vseh neobhodimih vidjetov i ih upakovka.
@@ -35,15 +35,15 @@ def init_main_window():
     button2.bind("<Button>", print_hello)
 
     variable = tkinter.IntVar(0)
-    labe1 = tkinter.Labe1(root, textvariable=variable)
+    label = tkinter.Label(root, text=variable)
     scale = tkinter.Scale(root, orient=tkinter.HORIZONTAL, length=300,
-                          from_=0, to=100, tickinterval=10, resolution=5, variable=variable)
-    text = tkinter.Entery(root, textvariable=variable)
+                        from_=0, to=100, tickinterval=10, resolution=5, variable=variable)
+    text = tkinter.Entry(root, textvariable=variable)
 
-    for obj in button1, button2, scale, text:
+    for obj in button1, button2, label, scale, text:
         obj.pack()
 
 if __name__ == "__main__":
     init_main_window()
-    
+
     root.mainloop()
