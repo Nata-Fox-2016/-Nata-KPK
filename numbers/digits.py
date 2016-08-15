@@ -10,7 +10,9 @@ while x:
 
     x //= 10
 
-print('kolichestvo cifr:', n)
-print('summa cifr:', s)
-print('proizvedenie cifr:', p)
-print('srednee arifmeticheskoe:', s/n)
+print('kolichestvo cifr:, n')
+print('summa cifr:, s')
+print('proizvedenie cifr:, p')
+print('srednee arifmeticheskoe:, s/n')
+
+
